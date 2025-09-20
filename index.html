@@ -5,10 +5,95 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DineFind</title>
     <link rel="stylesheet" href="style.css">
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    
+    <!-- hero section -->
+  <section class="hero">
+      <header>
+           <nav>
+            <div class="nav_left">
+                <div class="logo">
+                   <div class="logoImg">
+                       <img src="images/logo.png" alt="">
+                   </div>
+                   <span>DineFind</span>
+                </div>
+                <ul>
+                 <li><a href="#" class="active">Home</a></li>
+                 <li class="dropDown">
+                    <div class="dropDownLink">
+                         <a href="#">Listings</a>
+                         <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <ul>
+                         <li><a href="#">Wedding</a></li>
+                         <li><a href="#">Workshop</a></li>
+                         <li><a href="#">Real Estate</a></li>
+                         <li><a href="#">Study Center</a></li>
+                    </ul>
+               </li>
+                 <li><a href="#">User Dashboard</a></li>
+                 <li class="dropDown">
+                    <div class="dropDownLink">
+                         <a href="#">Pages</a>
+                         <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <ul>
+                         <li><a href="#">Pages 1</a></li>
+                         <li><a href="#">Pages 2</a></li>
+                         <li><a href="#">Pages 3</a></li>
+                         <li><a href="#">Pages 4</a></li>
+                    </ul>
+                 </li>
+                </ul>
+            </div>
 
-    
+            <div class="nav_right">
+                 <a href="#" class="user">
+                    <img src="images/user.png" alt="">
+                    <span>SignUp</span>
+                 </a>
+                 <div class="buyIcon">
+                     <img src="images/icon.png" alt="">
+                     <span>3</span>
+                 </div>
+                 <a href="#" class="navBtn">
+                    <img src="images/location.png" alt="">
+                    Add Listing
+                 </a>
+            </div>
+           </nav>
+      </header>
+      
+      <div class="hero_content">
+             <h1>Explore Nearby Restaurants</h1>
+             <p>Browse high-rated hotels, restaurants, attractions, activities and more!</p>
+             <div class="searchBox">
+                  <div class="searchBtn"><img src="images/btn.png" alt=""></div>
+                 <input type="search" name="search" id="search" placeholder="Search for locality, project...">
+                 <div class="message">22k+</div>
+             </div>
+             <div class="someShow">
+                  <div>
+                       <img src="images/vector1.png" alt="">
+                       <span>Beauty & Spa</span>
+                  </div>
+                  <div>
+                       <img src="images/vector2.png" alt="">
+                       <span>Eat & Drink</span>
+                  </div>
+                  <div>
+                       <img src="images/vector4.png" alt="">
+                       <span>Nightlife</span>
+                  </div>
+                  <div>
+                       <img src="images/vector5.png" alt="">
+                       <span>Coffee Shop</span>
+                  </div>
+             </div>
+      </div>
+  </section>
 </body>
 </html>
