@@ -953,6 +953,7 @@ nav{
     border-radius: 1.2rem;
     transition: transform 180ms ease, box-shadow 180ms ease;
     will-change: transform;
+    background-color: white;
 }
 
 .package_grid{
@@ -999,9 +1000,97 @@ nav{
 
 
 
+/* Latest Updates News section */
 
+.News_section{
+    padding: 2rem 1.3rem;
+    max-width: 1350px;
+    margin: auto;
+}
 
+.news_child{
+    width: 100%;
+    border: 1px solid #dddddd;
+    border-radius: 1rem;
+    background-color: white;
+}
 
+.news_child > img{
+    width: 100%;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+
+.news_child h2{
+    font-size: 20px;
+    font-weight: 500;
+    margin: 0.4rem 0;
+    color: #212529;
+}
+
+.news_child p{
+    font-size: 14px;
+    color: #2B2B2B;
+    margin: 1.5rem 0;
+}
+
+.news_content > span{
+    display: inline-block;
+    margin-bottom: 1.3rem;
+    background-color: #FAE8EB;
+    color: #C71F37;
+    padding: 5px 16px;
+    font-weight: 550;
+    font-size: 14px;
+    border-radius: 2rem;
+}
+
+.date, .eyefornews{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 15px;
+}
+
+.date i{
+    font-size: 17px;
+}
+
+.eyefornews img{
+    width: 18px;
+}
+
+.news_footer{
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+    flex-wrap: wrap;
+    border-top: 1px solid #dddddd;
+    padding: 0.8rem 2rem;
+}
+
+.news_content{
+    padding: 0.8rem 2rem;
+}
+
+.date > span{
+    font-weight: 500;
+}
+
+.eyefornews > span{
+    color: #444C55;
+}
+
+.news_grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    margin: 2.8rem 0;
+}
+
+.hidden_news_child{
+    display: none;
+}
 
 
 
@@ -1031,6 +1120,14 @@ nav{
  }
  .Package_section{
     max-width: 1120px;
+ }
+
+ .News_section{
+    max-width: 1120px;
+ }
+
+ .news_child h2{
+    font-size: 18px;
  }
 
 
@@ -1104,8 +1201,15 @@ nav{
 
   .svg_text p{
     font-size: 16px;
-}  
-   
+  }  
+
+ .news_grid{
+    grid-template-columns: repeat(2, 1fr);
+  }
+   .hidden_news_child{
+    display: block;
+  }
+
   
 
 }
@@ -1151,6 +1255,10 @@ nav{
    .package_grid{
     grid-template-columns: repeat(1, 1fr);
   }
+
+  .news_grid{
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 
 
@@ -1174,5 +1282,7 @@ nav{
    .free_listing{
       margin: 8px 0;
    }
+
+   
 
 }
