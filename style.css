@@ -289,7 +289,7 @@ nav{
 
 
 .category_section{
-    padding: 4rem 2rem;
+    padding: 4rem 1.3rem;
     max-width: 1400px;
     margin: auto;
 }
@@ -378,6 +378,245 @@ nav{
 }
 
 
+/* trending section */
+
+.trending_section{
+    padding: 4rem 1.3rem;
+    max-width: 1400px;
+    margin: auto;
+}
+
+.trending_section .moreListings{
+    text-decoration: none;
+    display: block;
+    max-width: 210px;
+    font-size: 15px;
+    text-align: center;
+    width: 100%;
+    margin: auto;
+    background-color: #FAE8EB;
+    color: #C71F37;
+    font-weight: 550;
+    padding: 1rem 1.2rem;
+    border-radius: 0.5rem;
+    transition: all 0.25s ease;
+}
+
+
+.moreListings:hover{
+    background: #C71F37;
+    color: #FAE8EB;
+  }
+
+
+.trending_child{
+    width: 100%;
+    border: 1px solid #dddddd;
+    border-radius: 0.8rem;
+    position: relative;
+}
+
+.trending_child .trending_img img{
+    width: 100%;
+    background-size: cover;
+}
+
+.trending_img{
+    position: relative;
+}
+
+.lovePng{
+    width: 35px;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+
+.lovePng img{
+    width: 100%;
+}
+
+.profile{
+    width: 50px;
+    position: absolute;
+    left: 20px;
+    bottom: -20px;
+}
+
+.profile img{
+    width: 100%;
+}
+
+.trending_child p{
+    margin: 0.3rem 0;
+}
+
+.listings_heading{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.trending_icon{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1rem;
+}
+
+.trending_icon > div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    font-size: 15px;
+    font-weight: 550;
+    color: #2B2B2B;
+}
+
+.trending_icon > div img{
+    max-width: 17px;
+    width: 100%;
+}
+
+.trending_content{
+    padding: 1.8rem 1.2rem;
+}
+
+.phone{
+    margin-bottom: 2px;
+}
+
+.trending_footer{
+  border-top: 1px solid #dddddd;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.7rem 1.2rem;
+}
+
+.trending_footer_overlay{
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.trending_footer_overlay img{
+    max-width: 32px;
+    width: 100%;
+}
+
+.trending_footer_overlay p{
+    font-size: 15px;
+    font-weight: 550;
+    color: #2B2B2B;
+}
+
+.overlay_span{
+    display: inline-block;
+    border: 1px solid #dddddd;
+    padding: 2px 4px;
+    border-radius: 50%;
+    font-size: 12px;
+    color: #444C55;
+    font-weight: 550;
+}
+
+.trending_footer_icons{
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+}
+
+
+.eye_icon{
+    width: 30px;
+    padding: 1.5px 6px;
+    border-radius: 50%;
+    border: 1px solid #dddddd;
+    
+}
+
+.love_icon{
+    width: 28px;
+    padding: 2px 6px;
+    border-radius: 50%;
+    border: 1px solid #dddddd;
+    
+}
+
+.shereIcon{
+    width: 28px;
+    padding: 1.5px 6px;
+    border-radius: 50%;
+    border: 1px solid #dddddd;
+    
+}
+
+
+.eye_icon img, .shereIcon img, .love_icon img{
+    width: 100%;
+}
+
+.trending_spans{
+   position: absolute;
+   top: 1.5rem;
+   left: 1.5rem;
+   display: flex;
+   align-items: center;
+   gap: 0.5rem;
+}
+
+.dollar{
+    display: inline-block;
+    margin: 0 2px;
+    font-size: 14px;
+    color: white;
+    font-weight: 550;
+    background-color: #f7f7f72f;
+    padding: 4px 12px;
+    border-radius: 6px;
+}
+
+.open{
+    font-size: 14px;
+    color: white;
+    font-weight: 550;
+    background-color: #27A860;
+    padding: 5px 12px;
+    border-radius: 6px;
+}
+
+.featured{
+    background-color: #f7f7f72f;
+    padding: 4px 12px;
+    color: white;
+    border-radius: 6px;
+}
+
+.featured i{
+    font-size: 14px;
+    color: white;
+    font-weight: 400;
+}
+
+.trending_grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin: 3rem 0;
+}
+
+.closed{
+    background-color: #C71F37;
+}
+
+
+
+
+
+
 
 
 
@@ -393,6 +632,10 @@ nav{
 
   }
 
+  .trending_section{
+    max-width: 1120px;
+}
+
   .hiddenCategory{
     display: flex;
   }
@@ -402,7 +645,7 @@ nav{
 
 
 
-@media (max-width: 1024px) {
+@media (max-width: 1070px) {
     
     nav{
         padding: 1.2rem 1.5rem;
@@ -429,13 +672,22 @@ nav{
         margin-top: 1rem;
     }
 
+    .trending_grid{
+    grid-template-columns: repeat(2, 1fr);
+   }
+   
+
 }
 
 
-@media(max-width: 890px){
+@media(max-width: 790px){
    .category_grid{
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .trending_grid{
+    grid-template-columns: repeat(1, 1fr);
+   }
 
 
 }
@@ -445,6 +697,12 @@ nav{
    .category_grid{
     grid-template-columns: repeat(1, 1fr);
   }
+   
 
+  .trending_section .moreListings{
+    max-width: 180px;
+    font-size: 14px;
+    padding: 0.9rem;
+}
 
 }
